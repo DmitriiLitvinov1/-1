@@ -13,7 +13,6 @@ print('Modified dict:',
       my_dict)
 
 
-
 my_set = {3.14, 2012, 'Sam', "Sam", 3.14}
 print('Set:', my_set)
 my_set.update({True, 2024})
