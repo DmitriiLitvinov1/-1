@@ -6,18 +6,15 @@ def count_calls():
     calls += 1
 
 
-
 def string_info(string):
-    print(len(string), string.upper(), string.lower())
     count_calls()
-
+    return len(string), string.upper(), string.lower()
 
 
 def is_contains(string, list_to_search):
-    mut_list = [ind.lower() for ind in list_to_search]
-    print(string.lower() in mut_list)
     count_calls()
-
+    mut_list = [ind.lower() for ind in list_to_search]
+    return string.lower() in mut_list
 
 
 print(string_info('Capybara'))
