@@ -7,6 +7,12 @@ class Vehicle:
         self.__engine_power = __engine_power
         self.__color = __color
 
+    def __str__(self):
+        return self.owner, self.__model, self.__color
+
+    def __int__(self):
+        return self.__engine_power
+
     def get_model(self):
         return (f'Модель: {self.__model}')
 
