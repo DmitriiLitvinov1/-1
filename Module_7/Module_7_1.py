@@ -6,7 +6,7 @@ class Shop:
 
     def get_products(self):
 
-        file = open(self._Shop__file_name, 'r')
+        file = open(self.__file_name, 'r')
         return f'{file.read()}'
         file.close()
 
@@ -16,7 +16,7 @@ class Shop:
             if str(product) in self.get_products():
                 print(f'Продукт {product.name}  уже есть в магазине')
             else:
-                file = open(self._Shop__file_name, 'a')
+                file = open(self.__file_name, 'a')
                 file.write(f'{product} \n')
                 file.close()
 
